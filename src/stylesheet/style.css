@@ -1,0 +1,62 @@
+@import "reset.css";
+
+:root {
+  --bg-color: #fbfcff;
+  --overlay: #040911;
+  --text-color: #0d114f;
+
+  --btn-blue: #3485ff;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  grid-area: "logo";
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.flex-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-ilustration {
+  width: auto;
+  height: auto;
+  display: flex;
+  grid-area: "ilustracao";
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* .app-ilustration > .ilustration {
+  width: 700px;
+  height: 700px;
+} */
+
+.app {
+  width: 100%;
+  height: auto;
+  grid-area: "formulario";
+}

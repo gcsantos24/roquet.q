@@ -1,0 +1,8 @@
+{
+  "name": "roquet.q",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Frotas/roquet.q.git",
+  "author": "Frotas <Guilherme.frotas19@gmail.com>",
+  "license": "MIT"
+}

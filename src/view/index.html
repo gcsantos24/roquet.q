@@ -7,35 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../stylesheet/style.css" />
   <link rel="shortcut icon" href="../assets/svg/fav-icon.svg" type="image/x-icon" />
-  <title>Roquet.Q</title>
+  <title>Criar Sala - Roquet.Q</title>
 </head>
 
 <body>
   <section class="container container-grid bg-color">
     <header class="navbar flex-navbar">
-      <div class="logo">
+      <div class="logo ">
         <a href="#">
           <img src="../assets/svg/logo.svg" alt="">
         </a>
       </div>
     </header>
-    <figcaption class="app-ilustration bg-green">
-      <img class="ilustration" src="../assets/svg/Ilustracao.svg" alt="">
-    </figcaption>
-    <main class="app flex-center">
-      <form>
-        <header>
+
+    <main class="app flex-start">
+      <figure class="app-ilustration">
+        <img class="ilustration" src="../assets/svg/Ilustracao.svg" alt="by @rebeccagonzalez">
+      </figure>
+
+      <form class="app-content flex-center">
+        <header class="app-header flex-center">
           <h2> Entre como participante </h2>
+          <label for="room-code" class="sr-only">
+            Código da sala
+          </label>
+          <input type="text" name="room-code" placeholder="Código da sala" id="room-code" class="input">
+          <button class="btn flex" type="button">
+            <figure class="icon-svg">
+              <img src="../assets/svg/log-in 1.svg" alt="
+              Entrar na sala">
+            </figure>
+            Entrar na sala
+          </button>
         </header>
-        <div>
-          <p> or </p>
+
+        <div class="app-separator flex-center">
+          ou
         </div>
-        <footer>
+
+        <footer class="app-footer flex-center">
           <h2> Crie sua própria sala de forma fácil </h2>
+          <button class="btn btn-outline flex" type="button">
+            <figure class="icon-svg">
+              <img src="../assets/svg/users 1.svg" alt="">
+            </figure>
+            Criar sala
+          </button>
         </footer>
       </form>
     </main>
   </section>
 </body>
-
 </html>

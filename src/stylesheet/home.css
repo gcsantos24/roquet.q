@@ -1,102 +1,6 @@
-/* @import url('reset.css'); */
-@import url("normalize.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
-html {
-  --black: #0d114f;
-  --white: #fafafa;
-  --red: #e83f5b;
-  --ligth-blue: #e0ecff;
-  --blue: #3485ff;
-  --bg-color: #fbfcff;
-  --overlay: #040911;
-  --icons-details: #a5b0c1;
-
-  --grey-dark: #4d5e77;
-  --grey-blue: #a1b2cd;
-  --grey-ligth: #e5ead1;
-}
-
-.container {
-  width: 100%;
-  height: auto;
-  font-size: 16px;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Poppins", sans-serif;
-  background-color: var(--bg-color);
-}
-
-.container-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-.navbar {
-  width: 100%;
-  height: auto;
-  grid-area: "logo";
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-.navbar > .logo {
-  margin: 35px 0px 0px 150px;
-}
-
-.flex {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-.flex-navbar {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  flex-grow: 1;
-}
-.flex-center {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-.flex-between {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-.flex-start {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.app {
-  width: 100%;
-  height: auto;
-  grid-area: "formulario";
-
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
 .app-ilustration {
   width: auto;
-  margin: 0px;
   height: auto;
-  grid-area: "ilustracao";
 }
 
 .app-content {
@@ -104,7 +8,6 @@ html {
   height: auto;
   margin-left: 15%;
   margin-right: 15%;
-  flex: 1 !important;
 }
 
 .app-header,
@@ -127,7 +30,7 @@ html {
 }
 
 .app-separator {
-  width: 50%;
+  width: 100%;
   margin: 40px 0px 40px 0px;
   font-size: 16px;
   font-weight: 400;
@@ -142,43 +45,4 @@ html {
   margin: 13px;
   border-style: solid;
   border-color: var(--grey-blue);
-}
-
-/* Buttons Style & Input Style */
-.btn {
-  text-align: center;
-  margin: 14px 0px 0px 0px;
-  color: var(--white);
-  background-color: var(--blue);
-  border-color: var(--blue);
-}
-.btn-outline {
-  border: 2px;
-  margin: 0px;
-  color: var(--blue);
-  background-color: transparent;
-}
-
-.input,
-.btn {
-  width: 100%;
-  height: 40px;
-  line-height: 0;
-  border-radius: 8px;
-  border-style: solid;
-}
-.input .icon-svg,
-.btn .icon-svg {
-  margin-right: 1rem;
-}
-
-.input {
-  padding: 0px 0px 0px 16px;
-  background-color: transparent;
-  border-color: var(--grey-blue);
-}
-.input::placeholder {
-  /* margin-left: 16px; */
-  font-size: 16px;
-  color: var(--grey-blue);
 }

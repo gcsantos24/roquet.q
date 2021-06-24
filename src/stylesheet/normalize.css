@@ -177,6 +177,7 @@ button,
 input {
   /* 1 */
   overflow: visible;
+   outline: none;
 }
 
 /**
@@ -348,4 +349,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+input {
+  cursor: text !important;
 }

@@ -2,19 +2,19 @@
 @import url("normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-:root {
+html {
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --ligth-blue: #e0ecff;
+  --blue: #3485ff;
   --bg-color: #fbfcff;
   --overlay: #040911;
-  --text-color: #0d114f;
+  --icons-details: #a5b0c1;
 
-  --btn-blue: #3485ff;
+  --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
-  --white-color: #fafafa;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  --grey-ligth: #e5ead1;
 }
 
 .container {
@@ -100,10 +100,11 @@
 }
 
 .app-content {
-  width: 100%;
+  width: auto;
   height: auto;
-  flex-basis: content;
-  margin-left: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  flex: 1 !important;
 }
 
 .app-header,
@@ -119,14 +120,14 @@
   font-size: 28px;
   font-weight: bold;
   margin: 0px 0px 24px 0px;
-  color: var(--text-color);
+  color: var(--black);
 }
 .sr-only {
   display: none;
 }
 
 .app-separator {
-  width: 100%;
+  width: 50%;
   margin: 40px 0px 40px 0px;
   font-size: 16px;
   font-weight: 400;
@@ -147,31 +148,32 @@
 .btn {
   text-align: center;
   margin: 14px 0px 0px 0px;
-  color: var(--white-color);
-  background-color: var(--btn-blue);
-  border-color: var(--btn-blue);
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 .btn-outline {
   border: 2px;
   margin: 0px;
-  color: var(--btn-blue);
+  color: var(--blue);
   background-color: transparent;
 }
 
 .input,
 .btn {
-  /* width: 100%; */
-  height: 50px;
+  width: 100%;
+  height: 40px;
+  line-height: 0;
   border-radius: 8px;
   border-style: solid;
 }
-.input > .icon-svg,
-.btn > .icon-svg {
-  margin: 1rem;
+.input .icon-svg,
+.btn .icon-svg {
+  margin-right: 1rem;
 }
 
 .input {
-  /* padding-left: 16px; */
+  padding: 0px 0px 0px 16px;
   background-color: transparent;
   border-color: var(--grey-blue);
 }

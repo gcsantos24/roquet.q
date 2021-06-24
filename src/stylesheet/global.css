@@ -22,12 +22,14 @@ html {
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
   --grey-ligth: #e5ead1;
+
+  font-size: 62.5%; /* 10px */
 }
 
 .container {
   width: 100%;
   height: auto;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   font-style: normal;
   font-weight: normal;
@@ -122,7 +124,6 @@ html {
   border-color: var(--grey-blue);
 }
 .input::placeholder {
-  /* margin-left: 16px; */
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--grey-blue);
 }

@@ -1,3 +1,3 @@
 # roquet.q
 
-Github Page: https://frotas.github.io/requet.q/src/view/index.html
+Github Page: https://frotas.github.io/roquet.q/src/view/index.html

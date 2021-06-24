@@ -52,21 +52,17 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  /* justify-content: center; */
-  /* flex-direction: column; */
 }
 .flex-center {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
 }
 .flex-between {
   display: flex;
   flex-flow: row;
   align-items: center;
-  /* flex-direction: row; */
   justify-content: space-between;
 }
 .flex-start {
@@ -98,7 +94,6 @@
   height: auto;
   flex-basis: content;
   margin-left: 10%;
-  margin-right: 10%;
 }
 
 .app-header,

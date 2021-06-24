@@ -1,13 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+  grid-template-areas:
+    "header header"
+    "left right";
+}
+
 .app-ilustration {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100vh;
+  grid-area: "left";
+  background-image: url("../assets/svg/Ilustracao.svg") no-repeat top/content;
 }
 
 .app-content {
   width: auto;
   height: auto;
-  margin-left: 15%;
-  margin-right: 15%;
+  grid-area: "right";
+  /* margin-left: 15%;
+  margin-right: 15%; */
 }
 
 .app-header,
@@ -24,9 +36,6 @@
   font-weight: bold;
   margin: 0px 0px 24px 0px;
   color: var(--black);
-}
-.sr-only {
-  display: none;
 }
 
 .app-separator {

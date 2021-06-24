@@ -1,6 +1,6 @@
 @import url("normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,27 +26,44 @@ html {
   font-size: 62.5%; /* 10px */
 }
 
-.container {
-  width: 100%;
-  height: auto;
-  font-size: 1.6rem;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Poppins", sans-serif;
+body {
+  width: 100vw;
+  height: 100vh;
   background-color: var(--bg-color);
 }
 
-.container-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+body,
+button,
+input,
+textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-size: clamp(14px, 1.6rem, 2vw);
+}
+.sr-only {
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  border-width: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: rect(0, 0, 0, 0);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .navbar {
   width: 100%;
   height: auto;
-  grid-area: "logo";
+  grid-area: "header";
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -54,40 +71,6 @@ html {
 }
 .navbar > .logo {
   margin: 35px 0px 0px 150px;
-}
-
-.flex {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-.flex-navbar {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  flex-grow: 1;
-}
-.flex-center {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-.flex-between {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-.flex-start {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-grow: 1;
 }
 
 /* Buttons Style & Input Style */

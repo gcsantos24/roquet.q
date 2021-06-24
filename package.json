@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/Frotas/roquet.q.git",
   "author": "Frotas <Guilherme.frotas19@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "npx ngrok http 0.0.0.0:5500"
+  },
+  "devDependencies": {
+    "ngrok": "^4.0.1"
+  }
 }
